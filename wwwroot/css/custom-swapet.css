@@ -1,0 +1,121 @@
+﻿/*Main text color: rgba(121, 85, 72, 0.9)*/
+/*Borders, lines, details color: rgba(121, 85, 72, 0.7)*/
+/*Primary color: rgb(255,127,80)*/
+
+@import url(https://db.onlinewebfonts.com/c/a0cee20f8261d66ffbce48fc77c2aaf4?family=SassoonLinkedENGW00-Regular);
+
+@font-face {
+    font-family: "SassoonLinkedENGW00-Regular";
+    src: url("//db.onlinewebfonts.com/t/a0cee20f8261d66ffbce48fc77c2aaf4.eot");
+    src: url("//db.onlinewebfonts.com/t/a0cee20f8261d66ffbce48fc77c2aaf4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a0cee20f8261d66ffbce48fc77c2aaf4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a0cee20f8261d66ffbce48fc77c2aaf4.woff") format("woff"), url("//db.onlinewebfonts.com/t/a0cee20f8261d66ffbce48fc77c2aaf4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a0cee20f8261d66ffbce48fc77c2aaf4.svg#SassoonLinkedENGW00-Regular") format("svg");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*-----GENERAL-----*/
+
+:root { /*colors*/
+    --text-main: rgba(121, 85, 72, 0.9);
+    --borders: rgba(121, 85, 72, 0.7); /*borders and similar details*/
+    --primary: rgb(255,127,80);
+}
+
+.logo { /*logo*/
+    color: var(--primary);
+    font-family: "SassoonLinkedENGW00-Regular";
+    margin: unset;
+    padding: unset;
+}
+
+
+/*-----NAVBAR-----*/
+
+nav { /*navbar*/
+    border-bottom: 2px solid var(--borders);
+    border-top: 2px solid var(--borders);
+    width: 90%;
+    margin: unset;
+    padding: unset;
+    /*    margin: 10px auto 30px auto;
+*/
+}
+
+    nav > ul { /*all elements together on navbar*/
+        width: 90%;
+        text-align: center;
+        margin: unset;
+        padding: unset;
+    }
+
+        nav > ul > li { /*all individual elements on navbar*/
+            display: inline-block;
+            margin: unset;
+            padding: unset;
+            /*    padding: 17px 15px 17px 15px;
+*/
+        }
+
+            nav > ul > li > .logo { /*logo on navbar*/
+                /*    margin-right: 100px;
+*/ font-size: 260%;
+                margin: unset;
+                padding: unset;
+            }
+
+            nav > ul > li > a { /*text on navbar*/
+                text-decoration: none;
+                margin: unset;
+                padding: unset;
+            }
+
+                nav > ul > li > a > i { /*icons on navbar*/
+                    /*    margin-right: 5px;
+*/
+                    margin: unset;
+                    padding: unset;
+                }
+
+                nav > ul > li > a > .button-user { /*user button on navbar*/
+                    /*    margin-left: 100px;
+*/ font-size: 35px;
+                    vertical-align: sub;
+                    color: var(--text-main);
+                    margin: unset;
+                    padding: unset;
+                }
+
+.text-navbar { /*text in links in navbar*/
+    color: var(--text-main);
+    font-size: 17px;
+    margin: unset;
+    padding: unset;
+}
+
+/*HOVER*/
+
+.hover-bgcolorchange:hover {
+    background-color: rgba(121, 85, 72, 0.05);
+    margin: unset;
+    padding: unset;
+}
+
+.hover-border:hover {
+    border: 1px solid var(--borders);
+    margin: unset;
+    padding: unset;
+}
+
+nav > ul > li:hover > a {
+    color: black;
+    margin: unset;
+    padding: unset;
+}
+
+    nav > ul > li:hover > a > i {
+        color: black;
+        margin: unset;
+        padding: unset;
+    }
