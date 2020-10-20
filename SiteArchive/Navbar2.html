@@ -14,22 +14,21 @@
 
 
 <body>
-    <header class="container-nav">
+    <header>
 
         <!----------------------------------NAVBAR---------------------------------->
-
+        <div class="container-nav">
             <!--logo-->
-            <a asp-controller="Home" asp-action="Index" class="logo hover-black">Swapet</a>
+            <a asp-controller="Home" asp-action="Index" class="logo">Swapet</a>
             <nav>
                 <ul>
 
                     <!--kako deluje-->
-                    <li style="border-right: 2px solid var(--borders)" class="hover-bgcolorchange hover-border"><a asp-controller="Home" asp-action="Index" class="text-navbar bold hover-black"><i class="fas fa-question-circle text-navbar"></i>Kako deluje?</a></li> <!--FIX1 HOVERING-->
-                    
+                    <li style="border-right: 2px solid var(--borders)" class="hover-bgcolorchange hover-border"><a asp-controller="Home" asp-action="Index" class="text-navbar bold"><i class="fas fa-question-circle text-navbar"></i>Kako deluje?</a></li> <!--FIX1 HOVERING-->
                     <!--muce-->
                     <li style="border-right: 2px solid var(--borders)" class="hover-bgcolorchange hover-border">
                         <div class="dropdown">
-                            <a asp-controller="Home" asp-action="Index" class="text-navbar dropbtn hover-black"><i class="fas fa-cat"></i>Muce</a>
+                            <a asp-controller="Home" asp-action="Index" class="text-navbar dropbtn"><i class="fas fa-cat"></i>Muce</a>
                             <ul class="dropdown-content">
                                 <li><a>Igrače</a></li>
                                 <li><a>Oprema</a></li>
@@ -41,7 +40,7 @@
                     <!--kužki-->
                     <li class="hover-bgcolorchange hover-border">
                         <div class="dropdown">
-                            <a asp-controller="Home" asp-action="Index" class="text-navbar dropbtn hover-black"><i class="fas fa-dog"></i>Kužki</a>
+                            <a asp-controller="Home" asp-action="Index" class="text-navbar dropbtn"><i class="fas fa-dog"></i>Kužki</a>
                             <ul class="dropdown-content">
                                 <li><a>Igrače</a></li>
                                 <li><a>Oprema</a></li>
@@ -49,22 +48,24 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="search-wrap">
-                        <!--seach bar-->
-                       <div>
-                            <div class="search">
-                                <input type="text" class="searchTerm" placeholder="Kaj iščete?">
-                                <button type="submit" class="searchButton">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!--user button-->
+                    <li>
+
+                    </li>
                     <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-user-circle button-user"></i></a></li>
                 </ul>
             </nav>
+        </div>
 
+        <!----------------------------------SEARCH BAR---------------------------------->
+
+        <div class="search-wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Kaj iščete?">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
     </header>
 
     <div class="container">
@@ -74,9 +75,9 @@
     </div>
 
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-@RenderSection("Scripts", required: false)
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

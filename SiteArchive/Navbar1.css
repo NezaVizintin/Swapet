@@ -25,68 +25,57 @@
 .logo { /*logo*/
     color: var(--primary);
     font-family: "SassoonLinkedENGW00-Regular";
-    font-weight: 500;
-    
-    margin-right: 20px;
-    font-size: 450%;
 }
-
-.bold {
-    font-weight: 500;
-}
-
 
 
 /*-----NAVBAR-----*/
 
-.container-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 nav { /*navbar*/
     border-bottom: 2px solid var(--borders);
     border-top: 2px solid var(--borders);
-    width: 80%;
-    margin-top: 20px;
-    padding: 7px 0px;
+    width: 90%;
+    margin: 10px auto 10px auto;
 }
 
-nav > ul { /*all elements together on navbar*/
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    margin: unset;
-}
+    nav > ul { /*all elements together on navbar*/
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: unset;
+    }
 
-nav > ul > li { /*all individual elements on navbar*/
-    display: inline-block;
-    padding: 0px 15px 0px 15px;
-}
+        nav > ul > li { /*all individual elements on navbar*/
+            display: inline-block;
+            padding: 0px 15px 0px 15px;
+        }
 
-nav > ul > li > a { /*text on navbar*/
-    text-decoration: none;
-}
+            nav > ul > li > .logo { /*logo on navbar*/
+                margin-right: 100px;
+                font-size: 260%;
+            }
 
-nav > ul > li > div > a > i,
-nav > ul > li > a > i
-{ /*icons on navbar*/
-    margin-right: 5px;
-}
+            nav > ul > li > a { /*text on navbar*/
+                text-decoration: none;
+            }
 
-.button-user { /*user button on navbar*/
-    font-size: 35px;
-    color: var(--text-main);
-    align-self: flex-end;
-}
+                nav > ul > li > a > i { /*icons on navbar*/
+                    margin-right: 5px;
+                }
+
+                nav > ul > li > a > .button-user { /*user button on navbar*/
+                    margin-left: 100px;
+                    font-size: 35px;
+                    vertical-align: sub;
+                    color: var(--text-main);
+                }
 
 .text-navbar { /*text in links in navbar*/
     color: var(--text-main);
     font-size: 17px;
 }
+
 
 
 /*HOVER*/
@@ -103,7 +92,12 @@ nav > ul > li > a > i
     border-bottom: 1px solid var(--borders);
 }*/
 
-.hover-black:hover {
+nav > ul > li > a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+nav > ul > li > div > a:hover {
     color: black;
     text-decoration: none;
 }
@@ -137,18 +131,18 @@ nav > ul > li > a > i
     z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: var(--text-main);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: var(--text-main);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -172,41 +166,32 @@ nav > ul > li > a > i
     border: 2px solid var(--borders);
     border-right: none;
     padding: 5px;
-    height: 30px;
+    height: 50px;
     border-radius: 10px 0 0 10px;
     outline: none;
     color: #9DBFAF;
 }
 
-.searchTerm:focus {
-    color: #00B4CC;
-}
+    .searchTerm:focus {
+        color: #00B4CC;
+    }
 
 .searchButton {
-    width: 33px;
-    height: 30px;
+    width: 55px;
+    height: 50px;
     border: 1px solid var(--borders);
     background: var(--borders);
     text-align: center;
     color: #fff;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
 /*Resize the wrap to see the search bar change!*/
-.search-wrap {
-    width: 50%;
-    margin-left: 20px;
+.wrap {
+    width: 100px%;
+    margin-left: 50px;
+    /*    margin: 10px auto 40px auto;*/
 }
-
-
-/*
-header {
-    width: 100%;
-    height: 120px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr;
-}*/

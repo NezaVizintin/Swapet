@@ -1,0 +1,29 @@
+﻿nav > ul > li > ul {
+    background-color: white;
+    list-style: none;
+    padding: 3px;
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    -webkit-transition: max-height 0.2s ease-in;
+    transition: max-height 0.2s ease-in;
+}
+
+    nav > ul > li > ul > li {
+        padding: 5px 10px;
+        border-left: 1px solid var(--borders);
+        border-right: 1px solid var(--borders);
+    }
+
+nav > ul > li:hover > ul {
+    max-height: 300px;
+}
+
+/*.cborder-top {
+    border-top: 1px solid var(--borders);
+}*/
+
+.cborder-bottom {
+    border-bottom: 1px solid var(--borders);
+}
