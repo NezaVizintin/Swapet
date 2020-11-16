@@ -340,4 +340,7 @@ ASALocalRun/
 healthchecksdb
 
 # Visual Studio Code
-.vscode/*
+.vscode
+bin
+obj
+packages
